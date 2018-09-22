@@ -6,7 +6,6 @@ import {
 } from '../../actions/contactAction';
 import {connect} from 'react-redux';
 
-import uuid from 'uuid';
 class AddContact extends Component {
   state = {
     name: '',
@@ -37,7 +36,6 @@ class AddContact extends Component {
     }
 
     const newContact = {
-     id:uuid(),
       name,
       email,
       phone
